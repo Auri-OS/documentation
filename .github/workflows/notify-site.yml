@@ -1,0 +1,20 @@
+# À placer dans le dépôt Auri-OS/docs sous : .github/workflows/notify-site.yml
+# Déclenche la reconstruction du site (Auri-OS/documentation) à chaque push.
+name: Notifier le site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Déclencher le build du site
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.SITE_DISPATCH_TOKEN }}
+          repository: Auri-OS/documentation
+          event-type: docs-updated
+
