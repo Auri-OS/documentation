@@ -15,6 +15,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.SITE_DISPATCH_TOKEN }}
-          repository: Auri-OS/documentation
+          repository: Auri-OS/docs
           event-type: docs-updated
 
