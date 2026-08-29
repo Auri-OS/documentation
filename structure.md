@@ -13,23 +13,19 @@ tree -I 'build|output|iso|.git' --dirsfirst
 ## Repository root
 
 ```text
-aurios
-├── docs
-│   ├── install_scripts
-│   ├── CONTRIBUTING.md
-│   ├── INSTALLATION.MD
-│   ├── loader.md
-│   └── setup-installation.md
+.
+├── scripts
+│   └── install.sh
 ├── src
-│   ├── boot
-│   ├── cpu
-│   ├── drivers
-│   ├── include
-│   ├── kernel
-│   ├── lib
-│   └── mm
+│   ├── boot
+│   ├── cpu
+│   ├── drivers
+│   ├── include
+│   ├── kernel
+│   ├── lib
+│   └── mm
 ├── tests
-│   └── integrations
+│   └── integrations
 ├── LICENSE
 ├── linker.ld
 ├── Makefile
@@ -50,56 +46,56 @@ tree -I 'build|output|.git|iso' --dirsfirst src
 ```text
 src
 ├── boot
-│   └── loader.s
+│   └── loader.s
 ├── cpu
-│   ├── gdt_flush.asm
-│   ├── gdt.c
-│   ├── idt_flush.asm
-│   ├── idt.c
-│   ├── irq.c
-│   ├── isr_stubs.asm
-│   ├── isr.c
-│   └── pic.c
+│   ├── gdt.c
+│   ├── gdt_flush.asm
+│   ├── idt.c
+│   ├── idt_flush.asm
+│   ├── irq.c
+│   ├── isr.c
+│   ├── isr_stubs.asm
+│   └── pic.c
 ├── drivers
-│   ├── framebuffer.c
-│   ├── keyboard.c
-│   ├── serial.c
-│   └── timer.c
+│   ├── framebuffer.c
+│   ├── keyboard.c
+│   ├── serial.c
+│   └── timer.c
 ├── include
-│   ├── ansi.h
-│   ├── colors.h
-│   ├── fetch.h
-│   ├── font.h
-│   ├── framebuffer.h
-│   ├── gdt.h
-│   ├── history.h
-│   ├── idt.h
-│   ├── integer.h
-│   ├── io.h
-│   ├── isr.h
-│   ├── keyboard.h
-│   ├── log.h
-│   ├── memory.h
-│   ├── mm.h
-│   ├── multiboot.h
-│   ├── pic.h
-│   ├── serial.h
-│   ├── shell.h
-│   ├── string.h
-│   ├── terminal.h
-│   ├── timer.h
-│   └── types.h
+│   ├── ansi.h
+│   ├── colors.h
+│   ├── fetch.h
+│   ├── font.h
+│   ├── framebuffer.h
+│   ├── gdt.h
+│   ├── history.h
+│   ├── idt.h
+│   ├── integer.h
+│   ├── io.h
+│   ├── isr.h
+│   ├── keyboard.h
+│   ├── log.h
+│   ├── memory.h
+│   ├── mm.h
+│   ├── multiboot.h
+│   ├── pic.h
+│   ├── serial.h
+│   ├── shell.h
+│   ├── string.h
+│   ├── terminal.h
+│   ├── timer.h
+│   └── types.h
 ├── kernel
-│   ├── ainsi.zig
-│   ├── history.c
-│   ├── kernel.c
-│   ├── log.c
-│   ├── shell.c
-│   └── terminal.c
+│   ├── ainsi.zig
+│   ├── history.c
+│   ├── kernel.c
+│   ├── log.c
+│   ├── shell.c
+│   └── terminal.c
 ├── lib
-│   ├── integer.c
-│   ├── memory.c
-│   └── string.c
+│   ├── integer.c
+│   ├── memory.c
+│   └── string.c
 └── mm
     ├── mmu.zig
     └── pmm.zig

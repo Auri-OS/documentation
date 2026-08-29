@@ -30,9 +30,7 @@ The binary is packaged with **GRUB** (Multiboot) into a bootable
 ## Run in QEMU
 
 ```bash
-make run        # QEMU x86_64
-make run32      # QEMU i386
-make run-mac    # macOS (direct boot)
+make run
 ```
 
 ## Test mode (serial output)
