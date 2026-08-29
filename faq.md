@@ -30,7 +30,7 @@ reliable results. The **Zig** toolchain is also supported
 
 ## How do I test the kernel?
 
-Build and run the ISO in QEMU with `make run` (or `make run32`, `make run-mac`).
+Build and run the ISO in QEMU with `make run`.
 The `make iso-debug` mode enables serial output for debugging.
 
 ## How do I report a bug?

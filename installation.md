@@ -22,28 +22,10 @@ toolchain targeting `i686-elf` and runs inside an emulator.
 
 ## Install dependencies
 
-The `Makefile` provides per-distribution install targets:
+The `Makefile` provides cross-distribution install target:
 
 ```bash
-make install-fedora    # Fedora / RHEL
-make install-arch      # Arch Linux
-make install-debian    # Debian / Ubuntu
-make install-mac       # macOS (Homebrew required)
-```
-
-### macOS (manual)
-
-```bash
-brew install i686-elf-gcc nasm qemu xorriso
-```
-
-## Zig toolchain (optional)
-
-AuriOS can also be built with the **Zig** toolchain instead of GCC:
-
-```bash
-make install-zig          # install the Zig compiler
-make run USE_ZIG=1        # build and run with Zig
+make install    # Linux / Unix
 ```
 
 ## Get the source code
